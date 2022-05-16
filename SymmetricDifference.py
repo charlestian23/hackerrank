@@ -1,0 +1,10 @@
+input()
+lis = set(input().split())
+input()
+lis2 = set(input().split())
+answer = lis.difference(lis2)
+answer = answer|lis2.difference(lis)
+temp = list(answer)
+lis = [int(s) for s in temp]
+lis.sort()
+print(*lis, sep="\n")
