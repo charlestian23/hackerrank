@@ -1,0 +1,1 @@
+select city from station where left(lower(city), 1) in ('a', 'e', 'i', 'o', 'u') and right(lower(city), 1) in ('a', 'e', 'i', 'o', 'u')
