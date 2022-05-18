@@ -1,0 +1,2 @@
+select concat(name, "(", left(occupation, 1), ")") from occupations order by occupation asc;
+select concat("There are a total of ", count(occupation), " ", lower(occupation), "s.") as query from occupations group by occupation order by query asc;
